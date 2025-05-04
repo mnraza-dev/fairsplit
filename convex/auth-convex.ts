@@ -2,7 +2,7 @@
 export default {
     providers: [
         {
-            domain: process.env.VITE_CLERK_FRONTEND_API_URL,
+            domain: process.env.CLERK_JWT_ISSUER_DOMAIN,
             applicationID: "convex",
         },
     ]
