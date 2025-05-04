@@ -1,6 +1,6 @@
 "use client"
 import { useStoreUser } from '@/hooks/useStoreUser'
-import { SignInButton, SignOutButton, SignUpButton, useUser } from '@clerk/clerk-react'
+import { SignInButton, SignOutButton, SignUpButton, UserButton, useUser } from '@clerk/clerk-react'
 import BarLoader from 'react-spinners/BarLoader'
 import Link from 'next/link'
 import React from 'react'
@@ -37,12 +37,17 @@ const Header = () => {
                                 <LayoutDashboard size={20} className='text-green-600' />
                                 Dashboard
                             </Button>
+                            <Button variant="ghost" className='md:hidden w-10 h-10 p-0'>
+                                <LayoutDashboard size={20} />
+                            </Button>
                         </Link>
-                        <SignOutButton>
+                        <UserButton />
+
+                        {/* <SignOutButton>
                             <Button variant="ghost" className='text-red-600 hover:bg-red-100 transition duration-200'>
                                 Sign Out
                             </Button>
-                        </SignOutButton>
+                        </SignOutButton> */}
                     </Authenticated>
                     <Unauthenticated>
                         <SignInButton >
