@@ -9,6 +9,6 @@ export default defineSchema({
         imageUrl: v.optional(v.string()),
     }).index("by_email", ["email"])
         .index("by_token", ["tokenIdentifier"])
-        .searchIndex("by_name", { searchField: "name" })
-        .searchIndex("by_email", { searchField: "email" })
+        .searchIndex("byName", { searchField: "name" })
+        .searchIndex("byEmail", { searchField: "email" })
 });
