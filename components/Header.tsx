@@ -15,10 +15,10 @@ const Header = () => {
     return (
         <header className="bg-white/95 sticky top-0 left-0  w-full mx-auto px-3 sm:px-6 lg:px-9 border-b  z-50 backdrop-blur shadow-md supports-[backdrop-filter]:bg-white/65">
             <nav className="flex items-center justify-between py-4">
-                <div className="flex items-center gap-2">
+                <Link href="/" className="flex items-center gap-2">
                     <span className="text-2xl font-light text-green-800">Fair </span>
                     <span className="text-2xl -ml-2 font-medium text-red-800">Split </span>
-                </div>
+                </Link>
 
 
                 {
