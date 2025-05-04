@@ -14,7 +14,7 @@ const Header = () => {
 
                     <div className='flex items-center gap-4'>
                         <Link href="/" className='text-gray-300'>Home</Link>
-                        <Link href="/" className='text-gray-300'>How it Works?</Link>
+                        <Link href="/" className='text-gray-300'>How it Works</Link>
                         <Link href="/" className='text-gray-300'>Contact</Link>
 
                         <div>
