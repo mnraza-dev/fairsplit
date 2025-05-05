@@ -51,12 +51,12 @@ const Header = () => {
                     </Authenticated>
                     <Unauthenticated>
                         <SignInButton >
-                            <Button variant="ghost">
+                            <Button variant="ghost" className='cursor-pointer text-green-600 hover:bg-green-100 transition duration-200'>
                                 Sign In
                             </Button>
                         </SignInButton>
                         <SignUpButton>
-                            <Button variant="outline" className='bg-green-600 text-white hover:bg-green-700 transition duration-200'>
+                            <Button variant="outline" className=' cursor-pointer bg-green-600 text-white hover:bg-green-700 hover:text-gray-100 transition duration-200'>
                                 Get Started
                             </Button>
                         </SignUpButton>
