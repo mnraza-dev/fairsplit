@@ -19,8 +19,6 @@ const Header = () => {
                     <span className="text-2xl font-light text-green-800">Fair </span>
                     <span className="text-2xl -ml-2 font-medium text-red-800">Split </span>
                 </Link>
-
-
                 {
                     path === "/" &&
                     <div className='hidden md:flex items-center gap-4'>
@@ -28,7 +26,6 @@ const Header = () => {
                         <Link href="#how-it-works" className="text-sm font-semibold hover:text-green-600 transition">How it Works</Link>
                     </div>
                 }
-
                 <div className='flex items-center gap-4'>
                     <Authenticated>
                         <Link href="/dashboard"
@@ -42,7 +39,6 @@ const Header = () => {
                             </Button>
                         </Link>
                         <UserButton />
-
                         {/* <SignOutButton>
                             <Button variant="ghost" className='text-red-600 hover:bg-red-100 transition duration-200'>
                                 Sign Out
@@ -61,17 +57,12 @@ const Header = () => {
                             </Button>
                         </SignUpButton>
                     </Unauthenticated>
-
                 </div>
-
             </nav>
             {
                 isLoading && <BarLoader width={"100%"} color={"#22c55e"} /> // Show a loading spinner while the user is being stored
-
             }
         </header>
-
     )
 }
-
 export default Header
